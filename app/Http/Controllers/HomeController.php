@@ -24,6 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
+        //menginputkan/mengambil data user yg sudah login
         $user = Auth::user();
         return view('home',['user'=>$user]);
     }
